@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L — Key Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo L -->
+        <div class="logo">L</div>
+        <p class="subtitle">— Lawliet Key Generator —</p>
+
+        <!-- Caixa principal -->
+        <div class="box">
+            <h2>🔑 GERAR KEY</h2>
+            
+            <input 
+                type="text" 
+                id="username" 
+                placeholder="Digite seu nome de usuário" 
+                maxlength="30"
+                autocomplete="off"
+            >
+            
+            <button id="generateBtn">GERAR KEY</button>
+
+            <div id="result" class="result hidden">
+                <p class="result-label">TUA KEY:</p>
+                <div class="key-box">
+                    <code id="keyOutput">KEY_00000000</code>
+                    <button id="copyBtn" title="Copiar">📋</button>
+                </div>
+                <p class="warning">⚠️ Guarde essa key. Você vai precisar dela toda vez que usar o script.</p>
+            </div>
+        </div>
+
+        <!-- Instruções -->
+        <div class="box">
+            <h2>📜 COMO USAR</h2>
+            <ol>
+                <li>Gera tua key acima</li>
+                <li>Copia e guarda</li>
+                <li>Cola no script quando pedir</li>
+                <li>Pronto, o hub abre</li>
+            </ol>
+        </div>
+
+        <!-- Discord -->
+        <div class="box">
+            <h2>💬 SUPORTE</h2>
+            <a href="https://discord.gg/azvee7Aur" target="_blank" class="discord-btn">
+                Entrar no Discord
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            by <span class="l-mark">L</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

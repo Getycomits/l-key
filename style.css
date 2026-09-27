@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', 'Arial', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 120px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -5px;
+    background: linear-gradient(180deg, #fff 0%, #666 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.box {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    border-color: #444;
+}
+
+.box h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    width: 100%;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 12px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #fff;
+}
+
+input[type="text"]::placeholder {
+    color: #555;
+}
+
+button#generateBtn {
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+button#generateBtn:hover {
+    background: #ddd;
+    transform: scale(1.01);
+}
+
+button#generateBtn:active {
+    transform: scale(0.98);
+}
+
+button#generateBtn:disabled {
+    background: #333;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.result {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+
+.result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+.result-label {
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.key-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #000;
+    border: 1px solid #4f4;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.key-box code {
+    flex: 1;
+    color: #4f4;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+#copyBtn {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#copyBtn:hover {
+    background: #2a2a2a;
+    border-color: #4f4;
+}
+
+.warning {
+    font-size: 11px;
+    color: #ffb84d;
+    line-height: 1.5;
+}
+
+ol {
+    padding-left: 20px;
+    color: #bbb;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+ol li::marker {
+    color: #fff;
+    font-weight: bold;
+}
+
+.discord-btn {
+    display: block;
+    background: #5865F2;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.discord-btn:hover {
+    background: #4752c4;
+    transform: scale(1.02);
+}
+
+.footer {
+    text-align: center;
+    color: #444;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.footer .l-mark {
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-left: 4px;
+    background: linear-gradient(180deg, #fff 0%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 90px;
+    }
+    .box {
+        padding: 20px;
+    }
+}
